@@ -4,6 +4,12 @@
 
 Run the following two lines of code in SAS, and open the link in the log, to stream a html page with an embedded Sonic The Hedgehog game!
 
+```
+filename playme url "https://raw.githubusercontent.com/allanbowe/sonic/master/sonic.sas";
+%inc playme;
+
+```
+
 # What?  Why?
 
 This project is just a bit of fun and a minimalist demonstration of using the [SASjs](https://sasjs.io) framework to stream web apps from SAS.
