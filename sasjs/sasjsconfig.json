@@ -1,37 +1,50 @@
 {
- "useMacroCore": true,
  "targets": [
   {
     "name": "viya",
     "serverType": "SASVIYA",
     "appLoc": "/Public/apps/sasjs/sonic",
-    "buildOutputFileName": "viyadeploy.sas",
-    "tgtDeployScripts":[
-      "sasjsbuild/viyadeploy.sas"
-    ],
-    "tgtDeployVars": {
-      "contextName": "Import 9 service compute context"
-     },
-    "serverUrl": "http://sas.analytium.co.uk",
-    "streamWeb": true,
-    "streamWebFolder": "webv",
-    "webSourcePath": "src"
+    "deployConfig": {
+     "deployScripts": [
+       "sasjsbuild/viyadeploy.sas"
+     ],
+     "deployServicePack": false
+    },
+    "buildConfig": {
+     "buildOutputFileName": "viyadeploy.sas",
+     "initProgram": "",
+     "termProgram": "",
+     "macroVars": {}
+    },
+    "serverUrl": "YOURSERVER",
+    "streamConfig": {
+     "assetPaths": [],
+     "streamWeb": true,
+     "streamWebFolder": "webv",
+     "webSourcePath": "src"
+    }
   },  {
     "name": "sas9",
     "serverType": "SAS9",
     "appLoc": "/30.Projects/3001.Internal/300114.sasjs/sonic",
-    "buildOutputFileName": "sas9deploy.sas",
-    "tgtDeployScripts":[
-      "sasjsbuild/sas9deploy.sas"
-    ],
-    "tgtDeployVars": {
-      "serverName": "SASApp",
-      "repositoryName": "Foundation"
+    "buildConfig": {
+     "buildOutputFileName": "sas9deploy.sas",
+     "initProgram": "",
+     "termProgram": "",
+     "macroVars": {}
+    },
+    "deployConfig": {
+     "deployScripts": [
+       "sasjsbuild/sas9deploy.sas"
+     ]
     },
     "serverUrl": "YOURSERVER",
-    "streamWeb": true,
-    "streamWebFolder": "webv",
-    "webSourcePath": "src"
+    "streamConfig": {
+     "assetPaths": [],
+     "streamWeb": true,
+     "streamWebFolder": "webv",
+     "webSourcePath": "src"
+    }
    }
   ]
 }
