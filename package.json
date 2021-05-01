@@ -11,8 +11,9 @@
   ],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "macrocore": "^5.17.3",
-    "sasjs": "^2.5.5"
+  "devDependencies": {
+    "@sasjs/adapter": "^2.2.14",
+    "@sasjs/cli": "^2.16.2",
+    "@sasjs/core": "^2.19.1"
   }
 }
