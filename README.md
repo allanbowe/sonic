@@ -7,8 +7,9 @@ Run the following two lines of code in SAS 9, and open the link in the log, to s
 ```
 filename playme url "https://raw.githubusercontent.com/allanbowe/sonic/master/sonic.sas";
 %inc playme;
-
 ```
+
+[![SC2 Video](https://img.youtube.com/vi/2HGbHw459yY/0.jpg)](http://www.youtube.com/watch?v=2HGbHw459yY)
 
 # What?  Why?
 
