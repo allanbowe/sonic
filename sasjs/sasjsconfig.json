@@ -1,51 +1,25 @@
 {
- "$schema": "https://cli.sasjs.io/sasjsconfig-schema.json",
- "targets": [
-  {
-    "name": "viya",
-    "serverType": "SASVIYA",
-    "appLoc": "/Public/apps/sasjs/sonic",
-    "deployConfig": {
-     "deployScripts": [
-       "sasjsbuild/viyadeploy.sas"
-     ],
-     "deployServicePack": false
+  "$schema": "https://cli.sasjs.io/sasjsconfig-schema.json",
+  "streamConfig": {
+    "streamWeb": true,
+    "streamWebFolder": "webv",
+    "webSourcePath": "src"
+  },
+  "deployConfig": {
+    "deployServicePack": true
+  },
+  "defaultTarget": "sas9",
+  "targets": [
+    {
+      "name": "viya",
+      "serverType": "SASVIYA",
+      "appLoc": "/Public/apps/sasjs/sonic"
     },
-    "buildConfig": {
-     "buildOutputFileName": "viyadeploy.sas",
-     "initProgram": "",
-     "termProgram": "",
-     "macroVars": {}
-    },
-    "serverUrl": "YOURSERVER",
-    "streamConfig": {
-     "assetPaths": [],
-     "streamWeb": true,
-     "streamWebFolder": "webv",
-     "webSourcePath": "src"
+    {
+      "name": "sas9",
+      "serverType": "SAS9",
+      "appLoc": "/30.Projects/3001.Internal/300114.sasjs/sonic",
+      "serverUrl": ""
     }
-  },  {
-    "name": "sas9",
-    "serverType": "SAS9",
-    "appLoc": "/30.Projects/3001.Internal/300114.sasjs/sonic",
-    "buildConfig": {
-     "buildOutputFileName": "sas9deploy.sas",
-     "initProgram": "",
-     "termProgram": "",
-     "macroVars": {}
-    },
-    "deployConfig": {
-     "deployScripts": [
-       "sasjsbuild/sas9deploy.sas"
-     ]
-    },
-    "serverUrl": "YOURSERVER",
-    "streamConfig": {
-     "assetPaths": [],
-     "streamWeb": true,
-     "streamWebFolder": "webv",
-     "webSourcePath": "src"
-    }
-   }
   ]
 }
