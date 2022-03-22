@@ -20,6 +20,21 @@
       "serverType": "SAS9",
       "appLoc": "/30.Projects/3001.Internal/300114.sasjs/sonic",
       "serverUrl": ""
+    },
+    {
+      "name": "server",
+      "serverType": "SASJS",
+      "appLoc": "/Public/apps/sonic",
+      "serverUrl": "",
+      "deployConfig": {
+        "deployServicePack": true
+      },
+      "streamConfig": {
+        "streamLogo": "sonic.png",
+        "streamWeb": true,
+        "streamWebFolder": "web",
+        "webSourcePath": "src"
+      }
     }
   ]
 }
