@@ -33,7 +33,8 @@
         "streamLogo": "sonic.png",
         "streamWeb": true,
         "streamWebFolder": "web",
-        "webSourcePath": "src"
+        "webSourcePath": "src",
+        "streamServiceName": "Sonic"
       }
     }
   ]
